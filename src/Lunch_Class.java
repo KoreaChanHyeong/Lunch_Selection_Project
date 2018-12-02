@@ -22,7 +22,7 @@ public class Lunch_Class {
 		Menu C4 = new Menu("니뽕내뽕","10000","" );
 		Menu C5 = new Menu("일미옥", "8000", "");
 		Menu C6 = new Menu("홍콩반점","7000","" );
-		Menu C7 = new Menu("임시", "임시", "임시");
+
 		
 		ArrayList<Menu> Chi = new ArrayList<>();
 		Chi.add(C1);
@@ -31,7 +31,7 @@ public class Lunch_Class {
 		Chi.add(C4); 
 		Chi.add(C5);
 		Chi.add(C6);
-		Chi.add(C7);
+
 		//양식에 관한 Array List
 		
 		
