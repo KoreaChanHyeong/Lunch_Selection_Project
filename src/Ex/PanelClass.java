@@ -24,15 +24,7 @@ class MyPanel extends JPanel {//∏ﬁ¿ŒπŸ≈¡
 		g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), this);
 	}
 }
-class MyPanel1 extends JPanel {//º∫∫∞πŸ≈¡
-	ImageIcon imageIcon = new ImageIcon("images/¿Âº“±∏∫∞.jpg");
-	Image image = imageIcon.getImage();
 
-	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
-		g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), this);
-	}
-}
 class MyPanel2 extends JPanel {// 16∞≠πŸ≈¡
 	ImageIcon imageIcon = new ImageIcon("images/16∞≠.jpg");
 	Image image = imageIcon.getImage();
@@ -64,7 +56,7 @@ class MyPanel4 extends JPanel {// 4∞≠πŸ≈¡
 }
 
 class MyPanel5 extends JPanel {// 2∞≠πŸ≈¡
-	ImageIcon imageIcon = new ImageIcon("images/2∞≠.jpg");
+	ImageIcon imageIcon = new ImageIcon("images/∞·Ω¬.jpg");
 	Image image = imageIcon.getImage();
 
 	public void paintComponent(Graphics g) {
