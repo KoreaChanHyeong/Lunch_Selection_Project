@@ -26,7 +26,7 @@ public class MenuClass extends JFrame{
 		mb.add(textMenu); // 메뉴바에 추가
 		this.setJMenuBar(mb); // JMenuBar를 JFrame에 붙인다.s
 
-		setSize(10, 200);
+		setSize(800, 10);
 		setVisible(true);
 	}
 

@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 
 class GameStart extends JPanel{
-	ImageIcon imageIcon = new ImageIcon("images/¹«Á¦_16.png");
+	ImageIcon imageIcon = new ImageIcon("images/´ë±âÈ­¸é.jpg");
 	Image image = imageIcon.getImage();
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
@@ -76,7 +76,7 @@ class MyPanel6 extends JPanel {// ¿ì½Â ¹ÙÅÁ
 }
 
 class MyPanel7 extends JPanel {// ¿ì½Â ¹ÙÅÁ
-	ImageIcon imageIcon = new ImageIcon("images/¿ì½ÂÀÚ.jpg");
+	ImageIcon imageIcon = new ImageIcon("images/¿ì½Â.jpg");
 	Image image = imageIcon.getImage();
 
 	public void paintComponent(Graphics g) {
@@ -85,7 +85,7 @@ class MyPanel7 extends JPanel {// ¿ì½Â ¹ÙÅÁ
 	}
 }
 class GameOverPanel extends JPanel{
-	ImageIcon imageIcon = new ImageIcon("images/GameOver.png");
+	ImageIcon imageIcon = new ImageIcon("images/GameOver.jpg");
 	Image image = imageIcon.getImage();
 
 	public void paintComponent(Graphics g) {

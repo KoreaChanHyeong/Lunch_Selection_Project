@@ -25,7 +25,7 @@ public class MainClass extends JFrame{//메인
 		ImageIcon rolloverIcon1 = new ImageIcon("images/btn2.png");
 
 		//마우스가 눌릴 때 이미지
-		ImageIcon pressedIcon1 = new ImageIcon("images/btn.png");
+		ImageIcon pressedIcon1 = new ImageIcon("images/btn2.png");
 		
 
 		JButton btn1 = new JButton(normalIcon1);// 음식		
