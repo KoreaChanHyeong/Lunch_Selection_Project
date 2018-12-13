@@ -11,7 +11,7 @@ class TimerRunnable extends Thread{	//Thread 클래스 상속
 	JLabel timerLabel;				//타이머 라벨생성
 	
 	boolean flag = false;			
-	int time=300;					//시간초 설정
+	int time=10;					//시간초 설정
 	JFrame j=new JFrame();
 	public TimerRunnable(JLabel timerLabel){		//생성자
 		this.timerLabel=timerLabel;
@@ -244,7 +244,7 @@ public class PlayWorldCup extends JFrame{
 
 		}// class lunch16r
 
-		class lunch8r extends JFrame { // 남자로 들어갔을때
+		class lunch8r extends JFrame { 
 
 			
 			lunch8r() {
