@@ -38,7 +38,7 @@ class ChooseFood extends JFrame { // 점심클래스
 		btn_1.setToolTipText("이과캠 점심 월드컵 게임을 시작합니다.");
 		btn_1.addActionListener(new ActionListener() { // 
 			public void actionPerformed(ActionEvent e) {
-				new LunchFoodClass();
+				new LunchFoodClass2();
 				dispose();
 			}
 		});

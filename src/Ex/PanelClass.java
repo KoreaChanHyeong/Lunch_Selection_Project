@@ -65,16 +65,6 @@ class MyPanel5 extends JPanel {// 2°­¹ÙÅÁ
 	}
 }
 
-class MyPanel6 extends JPanel {// ¿ì½Â ¹ÙÅÁ
-	ImageIcon imageIcon = new ImageIcon("images/¿ì½Â.jpg");
-	Image image = imageIcon.getImage();
-
-	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
-		g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), this);
-	}
-}
-
 class MyPanel7 extends JPanel {// ¿ì½Â ¹ÙÅÁ
 	ImageIcon imageIcon = new ImageIcon("images/¿ì½Â.jpg");
 	Image image = imageIcon.getImage();

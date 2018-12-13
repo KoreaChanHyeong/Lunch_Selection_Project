@@ -11,7 +11,7 @@ class TimerRunnable extends Thread{	//Thread 클래스 상속
 	JLabel timerLabel;				//타이머 라벨생성
 	
 	boolean flag = false;			
-	int time=10;					//시간초 설정
+	int time=300;					//시간초 설정
 	JFrame j=new JFrame();
 	public TimerRunnable(JLabel timerLabel){		//생성자
 		this.timerLabel=timerLabel;
@@ -60,7 +60,7 @@ public class PlayWorldCup extends JFrame{
 
 		int ll = 0;// 왼쪽 배열 값 _ 짝수
 		int rr = 1;// 오른쪽 배열 값 _ 홀수
-		int r[];
+		int r[]; //이미지 이름을 받기 위한 배열
 
 		int count = 0; // 카운트 값 _ 월드컵이 몇 번 진행되었는 지 기억함 
 		
@@ -79,17 +79,17 @@ public class PlayWorldCup extends JFrame{
 
 			c.add(panel, BorderLayout.CENTER);// FlowLayout,
 
-			r=new int[16];
+			r=new int[30];
 			for (int i = 0; i < r.length; i++) {
-				r[i] = i; // 랜덤배열 [0]~[15]개의 생성, 0~15 저장
+				r[i] = i; // 랜덤배열 [0]~[29]개의 생성, 0~29 저장
 			}
-			for (int i = 0; i < 16; i++) {
+			for (int i = 0; i < 20; i++) {
 				int temp;
-				int n = (int) (Math.random() * 16);// 0~15 랜덤 값
+				int n = (int) (Math.random() * 30);// 0~29 랜덤 값
 				temp = r[i]; // t값에 i값 저장
 				r[i] = r[n]; // r[i]에 r[랜덤] 저장
 				r[n] = temp; // r[랜덤]에 t값 저장
-				// 0~15의 배열 각 자리수를 랜덤으로 바꿈
+				// 0~29의 배열 각 자리수를 랜덤으로 바꿈
 			}
 			for (int i = 0; i < 16; i++) {
 				System.out.print(r[i] + " "); // 랜덤으로 바뀐 배열 0~15까지 총 16개의 숫자 뽑기
@@ -614,7 +614,6 @@ public class PlayWorldCup extends JFrame{
 
 				JButton btn = new JButton(startButton);// 처음으로
 				JButton btn1 = new JButton(exitButton); // 종료
-				JButton btn3 = new JButton(reButton);// 다시하기
 
 				panel.setLayout(null);
 
@@ -625,10 +624,6 @@ public class PlayWorldCup extends JFrame{
 				btn.setLocation(600, 200);
 				btn.setSize(100, 50);
 				panel.add(btn);
-
-				btn3.setLocation(600, 280);
-				btn3.setSize(100, 50);
-				panel.add(btn3);
 
 				btn1.setLocation(600, 360);
 				btn1.setSize(100, 50);
@@ -644,14 +639,6 @@ public class PlayWorldCup extends JFrame{
 					public void actionPerformed(ActionEvent e) {
 						System.exit(0);
 						setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-					}
-				});
-
-				btn3.addActionListener(new ActionListener() { // 다시
-					public void actionPerformed(ActionEvent e) {
-	
-						new PlayWorldCup();
-						dispose();
 					}
 				});
 
